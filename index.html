@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FETCHER Web Version</title>
+</head>
+<body style="margin:0; width:100%; height:100%;">
+    <script type="module">
+        // Adjust the import path based on the actual structure of the noVNC files
+        // This path should be relative to the root from where your files are served
+        import RFB from '/core/rfb.js';
+
+        const rfb = new RFB(document.body, 'ws://localhost:5900', {
+            credentials: { password: 'FETCHERALPHA' }
+        });
+    </script>
+</body>
+</html>
+
